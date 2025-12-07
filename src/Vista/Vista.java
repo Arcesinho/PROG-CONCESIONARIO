@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Vista {
 
+    Scanner sc = new Scanner(System.in);
+
     public int menu(){
 
         System.out.println("_______\n" +
@@ -26,14 +28,21 @@ public class Vista {
         System.out.println("6: Listar ventas.");
         System.out.println("-----------------------------");
 
-        int op = -1;
+        int opcion = -1;
 
         while (true) {
 
             System.out.println("¿Que opción quieres escoger?");
-            Scanner sc = new Scanner(System.in);
-            return sc.nextInt();
+            opcion = sc.nextInt();
+            sc.nextLine();
+            if (opcion >= 1 && opcion<=7 ){
+                break;
+            }
+
+            System.err.println("Introduce un opción válida: ");
         }
+
+        return opcion - 1;
 
     }
 
