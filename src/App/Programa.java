@@ -4,12 +4,8 @@ import Controlador.Controlador;
 
 public class Programa {
 
-
-    public static void main(String[] args) {
-
-        
-
+    static void main() {
+        Controlador controlador = new Controlador();
+        controlador.run();
     }
-
-
 }

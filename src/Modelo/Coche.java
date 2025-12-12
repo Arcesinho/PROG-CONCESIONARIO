@@ -2,14 +2,17 @@ package Modelo;
 
 public class Coche {
 
-    private String marca;
-    private String modelo;
-    private String matricula;
-    private int precio;
-    private int ano;
-    private double kilometros;
+    //Sé que se puede eliminar los kilometros e inclinarlos en el constructor pero quizás en un futuro se necesitaría
+
+    private final String marca;
+    private final String modelo;
+    private final String matricula;
+    private final int precio;
+    private final int ano;
+    private final double kilometros;
 
     //Getters
+
 
     public String getMarca() {
         return marca;
@@ -33,32 +36,6 @@ public class Coche {
 
     public double getKilometros() {
         return kilometros;
-    }
-
-    //Setters
-
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
-    }
-
-    public void setPrecio(int precio) {
-        this.precio = precio;
-    }
-
-    public void setAno(int ano) {
-        this.ano = ano;
-    }
-
-    public void setKilometros(double kilometros) {
-        this.kilometros = kilometros;
     }
 
     public Coche(String marca, String modelo, String matricula, int precio, int ano, double kilometros) {
